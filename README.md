@@ -1,2 +1,2 @@
-#Resgistration Form
+#Registration Form
 ## Shanna Graves
