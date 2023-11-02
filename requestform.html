@@ -15,11 +15,11 @@
 </head>
 
 <body>
-    <h2>Advising Appointment</h2>
+    <h1>Advising Appointment</h1>
     <div class="container">
 
-        <form>
-            <fieldset>
+        <form method="get" action="thankyou.html">
+            <fieldset class="contactInfo">
                 <legend>Contact Information</legend>
                 <label for="fname">First Name:
                     <input autofocus type="text" name="fname" required placeholder="First Name" id="fname" />
@@ -31,9 +31,45 @@
                     <input type="email" name="email" required placeholder="Email" id="email" />
                 </label>
             </fieldset>
-            <input type="submit" value="Submit" class="submit" />
+            <fieldset class="resRequest">
+                <legend>Reservation Request</legend>
+                <select name="profOption">
+                    <option value="adv1">Tiffany Ford</option>
+                    <option value="adv2">Kirsten Markley</option>
+                    <option value="adv3">Jackson Lewis</option>
+                </select>
+                <select name="month">
+                    <option value="m1">January</option>
+                    <option value="m2">Febuary</option>
+                    <option value="m3">March</option>
+                    <option value="m4">April</option>
+                    <option value="m5">May</option>
+                    <option value="m6">June</option>
+                    <option value="m7">July</option>
+                    <option value="m8">August</option>
+                    <option value="m9">September</option>
+                    <option value="m10">October</option>
+                    <option value="m11">November</option>
+                    <option value="m12">December</option>
+                </select>
+                <input name="day" id="daySpin" type="number" value="1" step="1" min="1" max="31" />
+                <label class="time" for="amTime">
+                    <input type="radio" name="amTime" id="amTime">
+                AM</label>
+                <label class="time" for="pmTime">
+                    <input type="radio" name="amTime" id="pmTime">
+                PM</label>
+                
+            </fieldset>
+            <fieldset class="classChoice">
+                <legend>Classes You Want To Take Next Semeseter:</legend>
+            </fieldset>
+            <fieldset class="addInfo">
+                <legend>Additional Info</legend>
+            </fieldset>
+            <input type="submit" value="Submit" class="submit" href="thankyou.html"/>
         </form>
     </div>
 </body>
 
-</html>
+</html> 

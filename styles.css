@@ -17,21 +17,49 @@ body {
     border-radius: 5px;
 }
 
-h2{
+h1 {
     text-align: center;
+    color: rgb(252, 246, 238);
 }
 
-label{
+h2 {
+    text-align: center;
+    color: darkslategray;
+}
+
+label {
     display: block;
     padding-bottom: 5px;
     position: relative;
 }
-input{
+
+input {
     position: absolute;
     left: 18%;
     width: 75%;
 }
+
 .submit {
     width: initial;
     position: initial;
+    margin-top: 5px;
+}
+
+#daySpin {
+    position: relative;
+    left: 5px;
+    width: 10%;
+}
+
+.time {
+    display: initial;
+
+}
+
+#amTime,
+#pmTime {
+    position: initial;
+    left: 5px;
+    width: auto;
+
 }
