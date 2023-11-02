@@ -21,14 +21,14 @@
         <form method="get" action="thankyou.html">
             <fieldset class="contactInfo">
                 <legend>Contact Information</legend>
-                <label for="fname">First Name:
-                    <input autofocus type="text" name="fname" required placeholder="First Name" id="fname" />
+                <label for="fname" class="userInfo">First Name:
+                    <input autofocus type="text" name="fname" required placeholder="First Name" id="fname" class="infoInput"/>
                 </label>
-                <label for="lname">Last Name:
-                    <input type="text" name="lname" required placeholder="Last Name" id="lname" />
+                <label for="lname" class="userInfo">Last Name:
+                    <input type="text" name="lname" required placeholder="Last Name" id="lname" class="infoInput"/>
                 </label>
-                <label for="email">Email:
-                    <input type="email" name="email" required placeholder="Email" id="email" />
+                <label for="email" class="userInfo">Email:
+                    <input type="email" name="email" required placeholder="Email" id="email" class="infoInput"/>
                 </label>
             </fieldset>
             <fieldset class="resRequest">
@@ -57,17 +57,38 @@
                     <input type="radio" name="amTime" id="amTime">
                 AM</label>
                 <label class="time" for="pmTime">
-                    <input type="radio" name="amTime" id="pmTime">
+                    <input type="radio" name="pmTime" id="pmTime">
                 PM</label>
                 
             </fieldset>
             <fieldset class="classChoice">
                 <legend>Classes You Want To Take Next Semeseter:</legend>
+                <label class="course" for="javaC">
+                    <input type="checkbox" name="javaC" id="javaC" multiple>
+                    Java
+                </label>
+                <label class="course" for="sharpC">
+                    <input type="checkbox" name="sharpC" id="sharpC" multiple>
+                    C#
+                </label>
+                <label class="course" for="webC">
+                    <input type="checkbox" name="webC" id="webC" multiple>
+                    Web Dev
+                </label>
+                <label class="course" for="dataC">
+                    <input type="checkbox" name="dataC" id="dataC" multiple>
+                    Database
+                </label>
+                <label class="course" for="systC">
+                    <input type="checkbox" name="systC" id="systC" multiple>
+                    System Analysis & Design
+                </label>
             </fieldset>
             <fieldset class="addInfo">
                 <legend>Additional Info</legend>
+                <textarea name="addInfo" id="addBox"placeholder="Any additional info..."></textarea>
             </fieldset>
-            <input type="submit" value="Submit" class="submit" href="thankyou.html"/>
+            <input type="submit" value="Submit" class="submit" href="thankyou.html" />
         </form>
     </div>
 </body>
