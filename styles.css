@@ -1,0 +1,37 @@
+/* 
+Author: Shanna Graves
+Date: 11/02/2023
+Assignment: Registration Form Assignment
+Filename: styles.css
+*/
+
+body {
+    background-color: darkslategray;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    background-color: antiquewhite;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+h2{
+    text-align: center;
+}
+
+label{
+    display: block;
+    padding-bottom: 5px;
+    position: relative;
+}
+input{
+    position: absolute;
+    left: 18%;
+    width: 75%;
+}
+.submit {
+    width: initial;
+    position: initial;
+}
